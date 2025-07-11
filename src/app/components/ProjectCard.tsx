@@ -23,7 +23,18 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <div className="flex items-center justify-center w-full bg-gray-100 dark:bg-gray-800 rounded-full px-4 py-2 mb-4">
         <div className="flex gap-2">
           {project.stack.map((tech) => (
-            <Image key={tech.name} src={tech.icon} alt={tech.name} width={24} height={24} className="dark:invert" />
+            <div key={tech.name} className="group relative flex justify-center">
+              <Image
+                src={tech.icon}
+                alt={tech.name}
+                width={24}
+                height={24}
+                className="dark:invert transition-transform duration-200 hover:scale-110"
+              />
+              <span className="absolute bottom-full mb-2 hidden group-hover:block w-auto p-2 text-xs text-white whitespace-no-wrap bg-gray-800 rounded-md shadow-lg">
+                {tech.name}
+              </span>
+            </div>
           ))}
         </div>
       </div>
@@ -35,7 +46,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           className="flex items-center justify-center gap-2 px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors w-full"
         >
           <Image src="./github.svg" alt="GitHub" width={20} height={20} className="dark:invert" />
-          Source
+          Source Code
         </a>
         <a
           href={project.liveUrl}
