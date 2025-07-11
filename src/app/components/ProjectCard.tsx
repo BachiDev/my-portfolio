@@ -14,7 +14,7 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="border border-gray-200 dark:border-gray-800 rounded-lg p-6 flex flex-col h-full font-mono">
+    <div className="border border-gray-200 dark:border-gray-800 rounded-lg p-6 flex flex-col h-full font-mono transition-all duration-300 hover:shadow-[0_0_15px_5px_rgba(59,130,246,0.5)]">
       <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
       <div className="relative w-full h-48 mb-4 rounded-md overflow-hidden">
         <Image src={project.image} alt={project.name} layout="fill" objectFit="contain" className="dark:invert" />
