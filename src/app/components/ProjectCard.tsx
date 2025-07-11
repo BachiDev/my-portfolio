@@ -14,7 +14,7 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="border border-gray-200 dark:border-gray-800 rounded-lg p-6 flex flex-col h-full">
+    <div className="border border-gray-200 dark:border-gray-800 rounded-lg p-6 flex flex-col h-full font-mono">
       <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
       <div className="relative w-full h-48 mb-4 rounded-md overflow-hidden">
         <Image src={project.image} alt={project.name} layout="fill" objectFit="contain" className="dark:invert" />
@@ -41,9 +41,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           href={project.liveUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600 transition-colors w-full"
+          className="flex items-center justify-center gap-2 px-4 py-2 rounded-md bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-blue-600 hover:to-purple-700 transition-colors w-full"
         >
-          <Image src="./link.svg" alt="Live Demo" width={20} height={20} />
+          <Image src="./link.svg" alt="Live Demo" width={20} height={20} className="dark:invert" />
           Live Demo
         </a>
       </div>
