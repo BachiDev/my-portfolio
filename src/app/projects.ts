@@ -32,8 +32,8 @@ export const projects = [
       { name: "Vue.js", icon: "./vue.svg" },
       { name: "Firebase", icon: "./firebase.svg" },
     ],
-    githubUrl: "https://github.com/fabian-hiller/connect-4",
-    liveUrl: "https://connect4.fabianhiller.com",
+    githubUrl: "https://github.com/BachiDev/Connect-4",
+    liveUrl: "https://bachidev.github.io/Connect-4/",
   },
   {
     name: "Blog Platform",

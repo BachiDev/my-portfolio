@@ -74,7 +74,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
       {isImageEnlarged && (
         <div
-          className="fixed inset-0 opacity-50 bg-black flex items-center justify-center z-50 cursor-pointer"
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 cursor-pointer"
           onClick={toggleImageEnlarge}
         >
           <div className="relative w-full h-full max-w-[90vw] max-h-[90vh]">
