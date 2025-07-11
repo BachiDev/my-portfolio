@@ -1,3 +1,4 @@
+import FloatingActionButton from "./components/FloatingActionButton";
 import ProjectCard from "./components/ProjectCard";
 import { projects } from "./projects";
 
@@ -19,6 +20,7 @@ export default function Home() {
           <ProjectCard key={project.name} project={project} />
         ))}
       </div>
+      <FloatingActionButton href="https://github.com/BachiDev/my-portfolio" />
     </main>
   );
 }
