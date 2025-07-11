@@ -3,7 +3,7 @@ export const projects = [
   {
     name: "Project One",
     description: "A brief description of Project One, highlighting its key features and purpose.",
-    image: "/placeholder.svg",
+    image: "./placeholder.svg",
     stack: [
       { name: "Next.js", icon: "./next.svg" },
       { name: "TypeScript", icon: "./typescript.svg" },
@@ -15,7 +15,7 @@ export const projects = [
   {
     name: "Project Two",
     description: "A brief description of Project Two, highlighting its key features and purpose.",
-    image: "/placeholder.svg",
+    image: "./placeholder.svg",
     stack: [
       { name: "React", icon: "./react.svg" },
       { name: "Node.js", icon: "./nodejs.svg" },
@@ -27,7 +27,7 @@ export const projects = [
   {
     name: "Project Three",
     description: "A brief description of Project Three, highlighting its key features and purpose.",
-    image: "/placeholder.svg",
+    image: "./placeholder.svg",
     stack: [
       { name: "Vue.js", icon: "./vue.svg" },
       { name: "Firebase", icon: "./firebase.svg" },
@@ -38,7 +38,7 @@ export const projects = [
   {
     name: "Project Four",
     description: "A brief description of Project Four, highlighting its key features and purpose.",
-    image: "/placeholder.svg",
+    image: "./placeholder.svg",
     stack: [
       { name: "Python", icon: "./python.svg" },
       { name: "Django", icon: "./django.svg" },
@@ -49,7 +49,7 @@ export const projects = [
   {
     name: "Project Five",
     description: "A brief description of Project Five, highlighting its key features and purpose.",
-    image: "/placeholder.svg",
+    image: "./placeholder.svg",
     stack: [
       { name: "Angular", icon: "./angular.svg" },
       { name: "Node.js", icon: "./nodejs.svg" },
@@ -60,7 +60,7 @@ export const projects = [
   {
     name: "Project Six",
     description: "A brief description of Project Six, highlighting its key features and purpose.",
-    image: "/placeholder.svg",
+    image: "./placeholder.svg",
     stack: [
       { name: "Svelte", icon: "./svelte.svg" },
       { name: "GraphQL", icon: "./graphql.svg" },
