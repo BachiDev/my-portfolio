@@ -1,5 +1,6 @@
-
+'use client'
 import Image from "next/image";
+import { useState } from "react";
 
 type ProjectCardProps = {
   project: {
@@ -13,11 +14,23 @@ type ProjectCardProps = {
 };
 
 export default function ProjectCard({ project }: ProjectCardProps) {
+  const [isImageEnlarged, setIsImageEnlarged] = useState(false);
+
+  const toggleImageEnlarge = () => {
+    setIsImageEnlarged(!isImageEnlarged);
+  };
+
   return (
     <div className="border border-gray-200 dark:border-gray-800 rounded-lg p-6 flex flex-col h-full font-mono transition-all duration-300 hover:shadow-[0_0_15px_5px_rgba(59,130,246,0.5)]">
       <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
-      <div className="relative w-full h-48 mb-4 rounded-md overflow-hidden">
-        <Image src={project.image} alt={project.name} layout="fill" objectFit="contain" className="dark:invert" />
+      <div
+        className="group relative w-full h-48 mb-4 rounded-md overflow-hidden cursor-pointer"
+        onClick={toggleImageEnlarge}
+      >
+        <Image src={project.image} alt={project.name} layout="fill" objectFit="contain" className="transition-opacity duration-300 group-hover:opacity-75" />
+        <div className="absolute inset-0 flex items-center justify-center bg-opacity-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <Image src="/magnifying-glass.svg" alt="Enlarge" width={48} height={48} className="invert" />
+        </div>
       </div>
       <p className="text-gray-600 dark:text-gray-400 mb-4 flex-grow">{project.description}</p>
       <div className="flex items-center justify-center w-full bg-gray-100 dark:bg-gray-800 rounded-full px-4 py-2 mb-4">
@@ -58,6 +71,22 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           Live Demo
         </a>
       </div>
+
+      {isImageEnlarged && (
+        <div
+          className="fixed inset-0 opacity-50 bg-black flex items-center justify-center z-50 cursor-pointer"
+          onClick={toggleImageEnlarge}
+        >
+          <div className="relative w-full h-full max-w-[90vw] max-h-[90vh]">
+            <Image
+              src={project.image}
+              alt={project.name}
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
