@@ -14,7 +14,7 @@ export default function FloatingActionButton({ href }: FloatingActionButtonProps
       className="fixed bottom-4 right-4 bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition-colors flex items-center justify-center"
       aria-label="View Source Code"
     >
-      <Image src="/github.svg" alt="GitHub" width={24} height={24} className="dark:invert" />
+      <Image src="./github.svg" alt="GitHub" width={24} height={24} className="dark:invert" />
     </a>
   );
 }

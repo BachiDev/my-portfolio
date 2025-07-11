@@ -34,7 +34,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors w-full"
         >
-          <Image src="/github.svg" alt="GitHub" width={20} height={20} className="dark:invert" />
+          <Image src="./github.svg" alt="GitHub" width={20} height={20} className="dark:invert" />
           Source
         </a>
         <a
@@ -43,7 +43,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600 transition-colors w-full"
         >
-          <Image src="/link.svg" alt="Live Demo" width={20} height={20} />
+          <Image src="./link.svg" alt="Live Demo" width={20} height={20} />
           Live Demo
         </a>
       </div>
