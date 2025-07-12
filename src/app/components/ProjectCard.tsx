@@ -5,6 +5,7 @@ import { useState } from "react";
 type ProjectCardProps = {
   project: {
     name: string;
+    type: string;
     description: string;
     image: string;
     stack: { name: string; icon: string }[];
@@ -23,6 +24,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="border border-gray-200 dark:border-gray-800 rounded-lg p-6 flex flex-col h-full font-mono transition-all duration-300 hover:shadow-[0_0_15px_5px_rgba(59,130,246,0.5)]">
       <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
+      <h4 className="text-md text-gray-500 dark:text-gray-400 mb-2">{project.type}</h4>
       <div
         className="group relative w-full h-48 mb-4 rounded-md overflow-hidden cursor-pointer"
         onClick={toggleImageEnlarge}
@@ -32,7 +34,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <Image src="/magnifying-glass.svg" alt="Enlarge" width={48} height={48} className="invert" />
         </div>
       </div>
-      <p className="text-gray-600 dark:text-gray-400 mb-4 flex-grow">{project.description}</p>
+      <p className="text-gray-600 dark:text-gray-400 mb-4 flex-grow flex items-center justify-center text-center">{project.description}</p>
       <div className="flex items-center justify-center w-full bg-gray-100 dark:bg-gray-800 rounded-full px-4 py-2 mb-4">
         <div className="flex gap-2">
           {project.stack.map((tech) => (
@@ -74,7 +76,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
       {isImageEnlarged && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 cursor-pointer"
+          className="fixed inset-0 flex items-center justify-center z-50 cursor-pointer" style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}
           onClick={toggleImageEnlarge}
         >
           <div className="relative w-full h-full max-w-[90vw] max-h-[90vh]">
