@@ -31,7 +31,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       >
         <Image src={project.image} alt={project.name} layout="fill" objectFit="contain" className="transition-opacity duration-300 group-hover:opacity-75" />
         <div className="absolute inset-0 flex items-center justify-center bg-opacity-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <Image src="/magnifying-glass.svg" alt="Enlarge" width={48} height={48} className="invert" />
+          <Image src="./magnifying-glass.svg" alt="Enlarge" width={48} height={48} className="invert" />
         </div>
       </div>
       <p className="text-gray-600 dark:text-gray-400 mb-4 flex-grow flex items-center justify-center text-center">{project.description}</p>
