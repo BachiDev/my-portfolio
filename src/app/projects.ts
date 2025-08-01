@@ -11,8 +11,8 @@ export const projects = [
       { name: "Cloud Functions", icon: "./cloud-functions.svg" },
       { name: "Stripe", icon: "./stripe.svg" },
     ],
-    githubUrl: "https://github.com/fabian-hiller/ecommerce-platform",
-    liveUrl: "https://ecommerce.fabianhiller.com",
+    githubUrl: "#",
+    liveUrl: "#",
   },
   {
     name: "Task Management App",
@@ -24,8 +24,8 @@ export const projects = [
       { name: "Node.js", icon: "./nodejs.svg" },
       { name: "Express", icon: "./express.svg" },
     ],
-    githubUrl: "https://github.com/fabian-hiller/task-management-app",
-    liveUrl: "https://tasks.fabianhiller.com",
+    githubUrl: "#",
+    liveUrl: "#",
   },
   {
     name: "Weather Dashboard",
@@ -39,8 +39,8 @@ export const projects = [
       { name: "JSON", icon: "./json.svg" },
       { name: "API", icon: "./api.svg" },
     ],
-    githubUrl: "https://github.com/fabian-hiller/weather-dashboard",
-    liveUrl: "https://weather.fabianhiller.com",
+    githubUrl: "#",
+    liveUrl: "#",
   },
   {
     name: "Connect 4",
@@ -65,8 +65,8 @@ export const projects = [
       { name: "Python", icon: "./python.svg" },
       { name: "Django", icon: "./django.svg" },
     ],
-    githubUrl: "https://github.com/fabian-hiller/blog-platform",
-    liveUrl: "https://blog.fabianhiller.com",
+    githubUrl: "#",
+    liveUrl: "#",
   },
   {
     name: "Social Media Clone",
@@ -77,7 +77,7 @@ export const projects = [
       { name: "Svelte", icon: "./svelte.svg" },
       { name: "GraphQL", icon: "./graphql.svg" },
     ],
-    githubUrl: "https://github.com/fabian-hiller/social-media-clone",
-    liveUrl: "https://social.fabianhiller.com",
+    githubUrl: "#",
+    liveUrl: "#",
   },
 ];
