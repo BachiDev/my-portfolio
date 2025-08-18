@@ -3,7 +3,7 @@ export const projects = [
     name: "CRM Demo",
     type: "Fullstack",
     description:
-      "A Demo CRM application featuring a RESTful API designed to showcase modern web development practices with a focus on clean architecture and robust deployment.",
+      "A Demo CRM application featuring a RESTful API and a Database designed to showcase modern web development practices with a focus on clean architecture and robust deployment.",
     image: "./crm-demo.png",
     stack: [
       { name: "Angular", icon: "./angular.svg" },
@@ -39,17 +39,18 @@ export const projects = [
     name: "Weather Dashboard",
     type: "Frontend",
     description:
-      "An interactive weather dashboard displaying real-time weather data, forecasts, and geographical information using the free Weather API from Open-Meteo.",
-    image: "./placeholder.svg",
+      "An interactive weather dashboard displaying real-time weather data and forecasts using the free Weather API from Open-Meteo.",
+    image: "./weather.png",
     stack: [
-      { name: "Angular", icon: "./angular.svg" },
+      { name: "Next.js", icon: "./next.svg" },
+      { name: "React", icon: "./react.svg" },
       { name: "TypeScript", icon: "./typescript.svg" },
-      { name: "Bootstrap", icon: "./bootstrap.svg" },
-      { name: "JSON", icon: "./json.svg" },
+      { name: "Tailwind CSS", icon: "./tailwind.svg" },
       { name: "API", icon: "./api.svg" },
+      { name: "JSON", icon: "./json.svg" },
     ],
-    githubUrl: "#",
-    liveUrl: "#",
+    githubUrl: "https://github.com/BachiDev/weather",
+    liveUrl: "https://bachidev.github.io/weather/",
   },
   {
     name: "Connect 4",
