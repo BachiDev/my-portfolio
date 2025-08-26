@@ -23,17 +23,21 @@ export const projects = [
     name: "Firebase Webstore",
     type: "Fullstack",
     description:
-      "A full-stack e-commerce platform with user authentication, product listings, shopping cart functionality, and secure payment processing.",
-    image: "./placeholder.svg",
+      "A Demo e-commerce platform with user authentication and secure payment processing through Stripe utilizing Webhooks and Cloud Functions to maintain real-time data synchronization.",
+    image: "./webstore.png",
     stack: [
       { name: "Google Cloud", icon: "./google-cloud.svg" },
       { name: "Firebase", icon: "./firebase.svg" },
       { name: "Firestore", icon: "./firestore.svg" },
       { name: "Cloud Functions", icon: "./cloud-functions.svg" },
       { name: "Stripe", icon: "./stripe.svg" },
+      { name: "Next.js", icon: "./next.svg" },
+      { name: "React", icon: "./react.svg" },
+      { name: "TypeScript", icon: "./typescript.svg" },
+      { name: "Tailwind CSS", icon: "./tailwind.svg" },
     ],
-    githubUrl: "#",
-    liveUrl: "#",
+    githubUrl: "https://github.com/BachiDev/webstore",
+    liveUrl: "https://bachidev-webstore.web.app/",
   },
   {
     name: "Weather Dashboard",
@@ -52,7 +56,20 @@ export const projects = [
     githubUrl: "https://github.com/BachiDev/weather",
     liveUrl: "https://bachidev.github.io/weather/",
   },
-  {
+/*  {
+    name: "Chat Room",
+    type: "Backend",
+    description:
+      "A real time chat app with user authentication.",
+    image: "./placeholder.svg",
+    stack: [
+      { name: "Supabase", icon: "./supabase.svg" },
+      { name: "Next.js", icon: "./next.svg" },
+    ],
+    githubUrl: "#",
+    liveUrl: "#",
+  },*/
+    {
     name: "Connect 4",
     type: "Frontend",
     description:
@@ -66,31 +83,5 @@ export const projects = [
     ],
     githubUrl: "https://github.com/BachiDev/Connect-4",
     liveUrl: "https://bachidev.github.io/Connect-4/",
-  },
-  {
-    name: "Blog Platform",
-    type: "Backend",
-    description:
-      "A robust blog platform featuring a rich text editor, user comments, and administrative tools for content management, built with a focus on SEO and performance.",
-    image: "./placeholder.svg",
-    stack: [
-      { name: "Python", icon: "./python.svg" },
-      { name: "Django", icon: "./django.svg" },
-    ],
-    githubUrl: "#",
-    liveUrl: "#",
-  },
-  {
-    name: "Social Media Clone",
-    type: "Fullstack",
-    description:
-      "A simplified social media application allowing users to create posts, follow others, and interact through likes and comments, mimicking core social functionalities.",
-    image: "./placeholder.svg",
-    stack: [
-      { name: "Svelte", icon: "./svelte.svg" },
-      { name: "GraphQL", icon: "./graphql.svg" },
-    ],
-    githubUrl: "#",
-    liveUrl: "#",
   },
 ];

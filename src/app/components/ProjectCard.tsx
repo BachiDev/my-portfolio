@@ -29,7 +29,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         className="group relative w-full h-48 mb-4 rounded-md overflow-hidden cursor-pointer"
         onClick={toggleImageEnlarge}
       >
-        <Image src={project.image} alt={project.name} layout="fill" objectFit="contain" className="transition-opacity duration-300 group-hover:opacity-75" />
+        <Image src={project.image} alt={project.name} fill={true} style={{ objectFit: 'contain' }} className="transition-opacity duration-300 group-hover:opacity-75" />
         <div className="absolute inset-0 flex items-center justify-center bg-opacity-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <Image src="./magnifying-glass.svg" alt="Enlarge" width={48} height={48} className="invert" />
         </div>
@@ -83,8 +83,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <Image
               src={project.image}
               alt={project.name}
-              layout="fill"
-              objectFit="contain"
+              fill={true} 
+              style={{ objectFit: 'contain' }}
             />
           </div>
         </div>
