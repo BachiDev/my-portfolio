@@ -56,20 +56,7 @@ export const projects = [
     githubUrl: "https://github.com/BachiDev/weather",
     liveUrl: "https://bachidev.github.io/weather/",
   },
-/*  {
-    name: "Chat Room",
-    type: "Backend",
-    description:
-      "A real time chat app with user authentication.",
-    image: "./placeholder.svg",
-    stack: [
-      { name: "Supabase", icon: "./supabase.svg" },
-      { name: "Next.js", icon: "./next.svg" },
-    ],
-    githubUrl: "#",
-    liveUrl: "#",
-  },*/
-    {
+  {
     name: "Connect 4",
     type: "Frontend",
     description:
