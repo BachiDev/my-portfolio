@@ -20,6 +20,23 @@ export const projects = [
     liveUrl: "https://bachidev.github.io/crm-demo",
   },
   {
+    name: "Hand Gesture Control",
+    type: "Machine Learning",
+    description:
+      "Control a user interface using real-time hand gestures captured from your webcam. This project uses machine learning to recognize specific hand poses and translate them into actions like scrolling and toggling content.",
+    image: "./handGestureControl.png",
+    stack: [
+      { name: "Tensorflow", icon: "./tensorflow.svg" },
+      { name: "Machine Learning", icon: "./machine-learning.svg" },
+      { name: "Next.js", icon: "./next.svg" },
+      { name: "React", icon: "./react.svg" },
+      { name: "TypeScript", icon: "./typescript.svg" },
+      { name: "Tailwind CSS", icon: "./tailwind.svg" },
+    ],
+    githubUrl: "https://github.com/BachiDev/hand-gesture-control",
+    liveUrl: "https://bachidev.github.io/hand-gesture-control/",
+  },
+  {
     name: "Firebase Webstore",
     type: "Fullstack",
     description:
