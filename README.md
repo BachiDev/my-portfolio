@@ -1,10 +1,5 @@
-# My Portfolio
+# My Portfolio — RETIRED
 
-A quick showcase of some coding projects. Each project card provides:
+This portfolio has moved to <https://bachi.dev/work> (repo `BachiDev/BachiDev.github.io`).
 
-*   Brief description, highlighting its key features and purpose
-*   Link to a live demo
-*   Source code on GitHub
-*   Used Tech-Stack
-
-[Check Out Live](https://bachidev.github.io/my-portfolio/)
+This repo now only serves a redirect shim at <https://bachidev.github.io/my-portfolio/> so old links keep working. The project data, screenshots, and icons were migrated into the main site.

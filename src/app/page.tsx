@@ -1,32 +1,37 @@
-import FloatingActionButton from "./components/FloatingActionButton";
-import Footer from "./components/Footer";
-import ProjectCard from "./components/ProjectCard";
-import { projects } from "./projects";
-import Image from "next/image";
+"use client";
 
+import { useEffect } from "react";
+
+const TARGET = "https://bachi.dev/work";
+
+// This repo is retired: the portfolio now lives at bachi.dev/work.
+// This page only keeps old https://bachidev.github.io/my-portfolio/ links working.
 export default function Home() {
+  useEffect(() => {
+    window.location.replace(TARGET);
+  }, []);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-20 p-4 lg:p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <a
-          href="https://bachidev.github.io"
-          
-          className="fixed top-4 left-4 px-4 py-2 rounded-md bg-gray-200 dark:bg-zinc-800/30 border border-gray-300 dark:border-neutral-800 hover:bg-gray-300 dark:hover:bg-zinc-700 transition-colors flex items-center gap-2"
-        >
-          <Image src="./arrow-left.svg" alt="Back arrow" width={20} height={20} className="dark:invert" />
-          Back to Overview
-        </a>
-      </div>
-
-      
-
-      <div className="mb-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-center max-w-5xl w-full lg:mb-0 gap-8">
-        {projects.map((project) => (
-          <ProjectCard key={project.name} project={project} />
-        ))}
-      </div>
-      <FloatingActionButton href="https://github.com/BachiDev/my-portfolio" />
-      <Footer />
+    <main
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: "1rem",
+        fontFamily: "system-ui, sans-serif",
+        background: "#09090b",
+        color: "#f5f5f5",
+        textAlign: "center",
+        padding: "1rem",
+      }}
+    >
+      <h1>This portfolio has moved</h1>
+      <p>You will be redirected to the new location in a moment.</p>
+      <a href={TARGET} style={{ color: "#a78bfa" }}>
+        Continue to bachi.dev/work
+      </a>
     </main>
   );
 }

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import CookieConsent from "./components/CookieConsent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Overview of some of my projects",
+  title: "Portfolio moved",
+  description: "This portfolio has moved to https://bachi.dev/work",
 };
 
 export default function RootLayout({
@@ -25,11 +24,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
-        <CookieConsent />
       </body>
     </html>
   );
